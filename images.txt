@@ -1,0 +1,290 @@
+<!DOTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+             body {
+           font-family: Verdana, sans-serif;
+           line-height: 1.5;
+           font-size: 15px;
+           margin: 100px 250px 40px;
+           box-sizing: content-box;
+           background-image: linear-gradient(#54F28E, #EBF948);
+            }
+            
+             .container {
+            display: flex;
+            justify-content: space-between; 
+            align-items: center;
+        }
+        .container img {
+            max-width: 50%;
+            height: auto;
+        }
+
+            
+        table {        
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+           }
+           
+        td, th {
+             border: 1px solid #dddddd;
+             text-align: left;
+             padding: 8px;
+           }
+            tr:nth-child(even)
+            {
+             background-color: #dddddd;
+            }
+            
+            .prev {
+           background-color: #04AA6D;
+           color: #ffffff;
+           padding: 14px 25px;
+           text-align: center;
+           text-decoration: none;
+           border-color: #04AA6D;
+           border-radius: 5px;
+       }
+       
+       .next {
+           float: right;
+           background-color: #04AA6D;
+           color: #ffffff;
+           padding: 14px 25px;
+           text-align: center;
+           text-decoration: none;
+           border-color: #04AA6D;
+           border-radius: 5px;
+       }
+       
+       .w3-example {
+               background-color: #CECECE;
+               padding: 10px;
+               margin-top: 30px;
+               
+             }
+             
+             .w3-code {
+               background-color: #f4f4f4;
+               border: 1px solid #C6C6C6;
+               padding: 5px;
+               overflow-x: auto;
+               ;
+             }
+             .htmlHigh {
+               border-left: 5px solid #04aa6d;
+               color: #000;
+             }
+             .htmlHigh .tag {
+               color: rgb(204, 51, 24);
+             }
+             .htmlHigh .attribute {
+               color: #ff0000;
+             }
+             .htmlHigh .value {
+               color: #008000;
+             }
+             main {
+               margin-left: 250px;
+               padding: 20px;
+             }
+       
+       #html
+         {
+          color:red;
+          background:#EAE8E8;
+         }
+         
+        
+         
+        #note
+          {
+          background-color: rgb(255, 247, 198);
+          padding: 10px;
+          margin: 10px;
+          }
+       
+        </style>
+    </head>
+    <body>
+        <h1>HTML Images &#128248;</h1>
+        <br>
+         <div class="nextprevious">
+            <a href="file:///F:/ITI%20cocrse/pogram/classes.html" target="_blank" class="prev"><b>&#128072; previous</b></a>
+           
+         </div><br><br><hr>
+         
+         <p>Images can improve the design and the appearance of a web page.</p><hr>
+         
+         <div class="container">
+            <img src="photo.jpg" width="500" height="333">
+            <img src="simple-img.jpg" width="300" height="500">
+        </div><br><hr>
+        
+       <h2>HTML Images Syntax</h2>
+       <p>The HTML <code id="html">&lt;img&gt;</code> tag is used to embed an image in a web page.</p>
+       <p>Images are not technically inserted into a web page; images are linked to web pages. The <code id="html">&lt;img&gt;</code> tag creates a holding space for the referenced image.</p>
+       <p>The <code id="html">&lt;img&gt;</code> tag is empty, it contains attributes only, and does not have a closing tag.</p>
+       <p>The <code id="html">&lt;img&gt;</code> tag has two required attributes:</p>
+       <ul>
+         <li>src - Specifies the path to the image</li>
+         <li>alt - Specifies an alternate text for the image</li>
+       </ul>
+       
+       <div class="w3-example" id="code" style="width:100%">
+       <h3>Syntax</h3>
+        <div class="w3-code notranslate htmlHigh" style="width:95%">
+            <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>img<span class="attributecolor" style="color:red"> src<span class="attributevaluecolor" style="color:mediumblue">="<i>url</i>"</span> alt
+             <span class="attributevaluecolor" style="color:mediumblue">="<em>alternatetext</em>"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+        </div></div><br><hr>
+       
+       <h2>The src Attribute</h2>
+       <p>The required <code id="html">src</code> attribute specifies the path (URL) to the image.</p>
+       <p><strong>Note:</strong>
+       When a web page loads, it is the browser, at that moment, that gets the image from a web server and inserts it into the page. Therefore, make sure that the image actually stays in the same spot in relation to the web page, otherwise your visitors will get a broken link icon. The broken link icon and the alt text are shown if the browser cannot find the image.
+       </p>
+       
+       <div class="w3-example" id="code" style="width:100%">
+       <h3>Example</h3>
+        <div class="w3-code notranslate htmlHigh" style="width:95%">
+            <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>img<span class="attributecolor" style="color:red"> src<span class="attributevaluecolor" style="color:mediumblue">="img_chania.jpg"</span> alt<span class="attributevaluecolor" style="color:mediumblue">="Flowers 
+              in Chania"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+        </div></div><br><hr>
+        
+       <h2>The alt Attribute</h2>
+       <p>The required <code id="html">alt</code> attribute provides an alternate text for an image, if the user for some reason cannot view it (because of slow connection, an error in the src attribute, or if the user uses a screen reader).</p>
+       <p>The value of the <code id="html">alt</code> attribute should describe the image:</p>
+       
+       <div class="w3-example" id="code" style="width:100%">
+       <h3>Example</h3>
+        <div class="w3-code notranslate htmlHigh" style="width:95%">
+            <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>img<span class="attributecolor" style="color:red"> src<span class="attributevaluecolor" style="color:mediumblue">="img_chania.jpg"</span> alt<span class="attributevaluecolor" style="color:mediumblue">="Flowers 
+              in Chania"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+        </div></div>
+       
+       <div id="note" border="1" style="width:100%">
+        <p><strong>Tip:</strong>
+       "A screen reader is a software program that reads the HTML code, and allows the user to "listen" to the content. Screen readers are useful for people who are visually impaired or learning disabled."
+        </p>
+    </div>
+     <br><hr>
+       
+       <h2>Image Size - Width and Height</h2>
+       <p>You can use the <code id="html">style</code> attribute to specify the width and height of an image.</p>
+       
+       <div class="w3-example" id="code" style="width:100%">
+       <h3>Example</h3>
+        <div class="w3-code notranslate htmlHigh" style="width:95%">
+            <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>img<span class="attributecolor" style="color:red"> src<span class="attributevaluecolor" style="color:mediumblue">="img_girl.jpg"</span> alt<span class="attributevaluecolor" style="color:mediumblue">="Girl in a jacket"</span> style<span class="attributevaluecolor" style="color:mediumblue">="width:500px;height:600px;"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+        </div></div>
+       
+       <p>Alternatively, you can use the <code id="html">width</code> and <code id="html">height</code> attributes:</p>
+       
+       <div class="w3-example" id="code" style="width:100%">
+       <h3>Example</h3>
+        <div class="w3-code notranslate htmlHigh" style="width:95%">
+            <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>img<span class="attributecolor" style="color:red"> src<span class="attributevaluecolor" style="color:mediumblue">="img_girl.jpg"</span> alt<span class="attributevaluecolor" style="color:mediumblue">="Girl in a jacket"</span> width<span class="attributevaluecolor" style="color:mediumblue">="500"</span> height<span class="attributevaluecolor" style="color:mediumblue">="600"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+       </div></div>
+       
+       <p>The <code id="html">width</code> and <code id="html">height</code> attributes always define the width and height of the image in pixels.</p>
+       
+       <div id="note" border="1" style="width:100%">
+        <p><strong>Note:</strong>
+       " Always specify the width and height of an image. If width and height are not specified, the web page might flicker while the image loads."
+        </p>
+    </div>
+     <br><hr>
+     
+     <h2>Width and Height, or Style?</h2>
+     <p>The <code id="html">width</code>, <code id="html">height</code> , and <code id="html">style</code> attributes are all valid in HTML.</p>
+     <p>However, we suggest using the <code id="html">style</code> attribute. It prevents styles sheets from changing the size of images:</p>
+      
+      <div class="w3-example" id="code" style="width:100%">
+       <h3>Example</h3>
+        <div class="w3-code notranslate htmlHigh" style="width:95%">
+            <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>!DOCTYPE<span class="attributecolor" style="color:red"> html</span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>html<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>head<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>style<span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="cssselectorcolor" style="color:brown"><br>img <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"> <br>&nbsp;&nbsp;width<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 100%<span class="cssdelimitercolor" style="color:black">;</span></span> <br></span><span class="cssdelimitercolor" style="color:black">}</span></span><br>
+            <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/style<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>      
+            <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/head<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+            <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>body<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>img<span class="attributecolor" style="color:red"> src<span class="attributevaluecolor" style="color:mediumblue">="html5.gif"</span> alt<span class="attributevaluecolor" style="color:mediumblue">="HTML5 Icon"</span> width<span class="attributevaluecolor" style="color:mediumblue">="128"</span> height<span class="attributevaluecolor" style="color:mediumblue">="128"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>img<span class="attributecolor" style="color:red"> src<span class="attributevaluecolor" style="color:mediumblue">="html5.gif"</span> alt<span class="attributevaluecolor" style="color:mediumblue">="HTML5 Icon"</span> style<span class="attributevaluecolor" style="color:mediumblue">="width:128px;height:128px;"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br>    
+            <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/body<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+            <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/html<span class="tagcolor" style="color:mediumblue">&gt;</span></span> 
+      </div></div><br><hr>
+      
+      <h2>Images in Another Folder</h2>
+      <p>If you have your images in a sub-folder, you must include the folder name in the src attribute:</p>
+      
+      <div class="w3-example" id="code" style="width:100%">
+       <h3>Example</h3>
+        <div class="w3-code notranslate htmlHigh" style="width:95%">
+            <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>img<span class="attributecolor" style="color:red"> src<span class="attributevaluecolor" style="color:mediumblue">="/images/html5.gif"</span> 
+            alt<span class="attributevaluecolor" style="color:mediumblue">="HTML5 Icon"</span> style<span class="attributevaluecolor" style="color:mediumblue">="width:128px;height:128px;"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+        </div></div>
+      
+      <p><strong>Notes on external images:</strong> External images might be under copyright. If you do not get permission to use it, you may be in violation of copyright laws. In addition, you cannot control external images; they can suddenly be removed or changed.</p>
+      <br><hr>
+      
+      <h2>Animated Images</h2>
+      <p>HTML allows animated GIFs:</p>
+      
+      <div class="w3-example" id="code" style="width:100%">
+       <h3>Example</h3>
+        <div class="w3-code notranslate htmlHigh" style="width:95%">
+            <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>img<span class="attributecolor" style="color:red"> src<span class="attributevaluecolor" style="color:mediumblue">="programming.gif"</span> alt<span class="attributevaluecolor" style="color:mediumblue">="Computer Man"</span> style
+            <span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+            <span class="attributevaluecolor" style="color:mediumblue">="width:48px;height:48px;"</span></span>
+      </div></div><br><hr>
+      
+      <h2>Image as a Link</h2>
+      <p>To use an image as a link, put the <code id="html">&lt;img&gt;</code> tag inside the <code id="html">&lt;a&gt;</code> tag:</p>
+      
+      <div class="w3-example" id="code" style="width:100%">
+       <h3>Example</h3>
+        <div class="w3-code notranslate htmlHigh" style="width:95%">
+            <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>a<span class="attributecolor" style="color:red"> href<span class="attributevaluecolor" style="color:mediumblue">="default.asp"</span></span>
+            <span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>img<span class="attributecolor" style="color:red"> src<span class="attributevaluecolor" style="color:mediumblue">="smiley.gif"</span> alt<span class="attributevaluecolor" style="color:mediumblue">="HTML tutorial"</span>style
+            <span class="attributevaluecolor" style="color:mediumblue">="width:42px;height:42px;"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/a<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+        </div></div><br><hr>
+      
+      <h2>Image Floating</h2>
+      <p>Use the CSS float property to let the image <code id="html">float</code> to the right or to the left of a text:</p>
+      
+      <div class="w3-example" id="code" style="width:100%">
+       <h3>Example</h3>
+        <div class="w3-code notranslate htmlHigh" style="width:95%">
+            <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>img<span class="attributecolor" style="color:red"> src<span class="attributevaluecolor" style="color:mediumblue">="smiley.gif"</span> alt<span class="attributevaluecolor" style="color:mediumblue">="Smiley face"</span>style
+            <span class="attributevaluecolor" style="color:mediumblue">="float:right;width:42px;height:42px;"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>The image will float to the right of the text.
+            <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>img<span class="attributecolor" style="color:red"> src<span class="attributevaluecolor" style="color:mediumblue">="smiley.gif"</span> alt<span class="attributevaluecolor" style="color:mediumblue">="Smiley face"</span>style
+            <span class="attributevaluecolor" style="color:mediumblue">="float:left;width:42px;height:42px;"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>The image will float to the left of the text.
+            <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span> 
+      </div></div><br><hr>
+      
+      <div id="note" border="1" style="width:100%">
+        <p><strong>Tip:</strong>
+       "To learn more about CSS Float, read our CSS Float Tutorial."
+        </p>
+      </div><br><hr>
+      
+      <h2>Chapter Summary</h2>
+      <ul>
+        <li>Use the HTML <code id="html">&lt;img&gt;</code> element to define an image</li>
+        <li>Use the HTML <code id="html">src</code> attribute to define the URL of the image</li>
+        <li>Use the HTML <code id="html">alt</code> attribute to define an alternate text for an image, if it cannot be displayed</li>
+        <li>Use the HTML <code id="html">width</code> and <code id="html">height</code> attributes or the CSS <code id="html">width</code> and <code id="html">height</code> properties to define the size of the image</li>
+        <li>Use the CSS float property to let the image float to the left or to the right</li>
+      </ul>
+      
+      <div id="note" border="1" style="width:100%">
+        <p><strong>Note:</strong>
+       "Loading large images takes time, and can slow down your web page. Use images carefully."
+        </p>
+      </div><br><hr>
+       <br>
+       <div class="nextprevious">
+            <a href="file:///F:/ITI%20cocrse/pogram/classes.html" target="_blank" class="prev"><b>&#128072; previous</b></a>
+           
+         </div><br><hr>
+    </body>
+</html>
